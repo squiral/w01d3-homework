@@ -89,8 +89,36 @@ p even_numbers
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 
-
+users["Erik"][:lottery_numbers] << 7
+p users["Erik"][:lottery_numbers]
 
 # 8. Change Erik's hometown to Edinburgh
+
+users["Erik"][:home_town] = "Edinburgh"
+p users["Erik"][:home_town]
+
 # 9. Add a pet dog to Erik called "Fluffy"
+
+users["Erik"][:pets] << {
+  :name => "fluffy",
+  :species => "dog"
+}
+
+p users["Erik"][:pets]
+
 # 10. Add another person to the users hash
+
+users["Philip"] = {
+  :twitter => "Philly_",
+  :lottery_numbers => [5, 1, 69, 33, 45, 32],
+  :home_town => "Inverness",
+  :pets => [
+  {
+    :name => "debra",
+    :species => "lizard"
+  }
+]
+}
+
+p users.keys
+p users["Philip"]

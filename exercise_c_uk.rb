@@ -35,7 +35,7 @@ united_kingdom << {
 
 index = 0
 for country in united_kingdom
-  p united_kingdom[count][:name]
+  p united_kingdom[index][:name]
   index += 1
 end
 
